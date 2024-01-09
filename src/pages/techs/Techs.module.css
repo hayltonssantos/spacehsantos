@@ -1,0 +1,22 @@
+.main{
+  height: 100vh;
+  width: 100%;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.logoTech{
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+}
+
+.logoTech:hover{
+  width: 90px;
+  height: 90px;
+}

@@ -5,7 +5,7 @@ import minhaPhoto from '../../assets/minha_foto.jpg'
 export default function Main() {
   return (
     <>
-      <div className={styles.main}>
+      <div className={styles.main} id='home'>
         <div className={styles.homeText}>
             'Hi there,
           <br/>
@@ -16,7 +16,7 @@ export default function Main() {
             Welcome to my space'
         </div>
         <div className={styles.photo}>
-          <img src={minhaPhoto}/>
+          <img className={styles.profilePhoto} src={minhaPhoto}/>
         </div>
       </div>
     </>

@@ -42,7 +42,7 @@ export default function About() {
   `
 
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id='about'>
       
       <div className={styles.textBox}>
         <h2>
