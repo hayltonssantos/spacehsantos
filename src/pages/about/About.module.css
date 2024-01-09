@@ -1,0 +1,28 @@
+.main{
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: solid 1px blanchedalmond;
+  border-bottom: solid 1px blanchedalmond;
+}
+
+.textBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  height: auto;
+  width: 60%;
+  margin: auto;
+  padding: 5px 50px 30px 50px;
+
+  border: solid 2px rgb(245, 145, 0);
+  border-radius: 25px;
+}
+
