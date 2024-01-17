@@ -1,0 +1,39 @@
+.card{
+  background-color: aqua;
+  border: 1px solid red;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+
+.title{
+  background-color: black;
+
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+
+  height: 25%;
+}
+
+.text{
+  height: 75%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
