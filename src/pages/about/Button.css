@@ -5,10 +5,11 @@
   margin: 10px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid rgb(254,145,0);
+  border: none;
+  border-bottom: 1px solid rgb(254,145,0);
+  border-radius: 5px;
   outline: none;
   transition: 1s ease-in-out;
-  border-radius: 15px;
 }
 
 .btn:hover {
@@ -25,3 +26,4 @@
   font-size: 18px;
   font-weight: 100;
 }
+

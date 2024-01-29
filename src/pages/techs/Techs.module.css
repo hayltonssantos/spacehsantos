@@ -4,19 +4,29 @@
  
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   text-align: center;
+  
 }
 
 .logoTech{
-  width: 80px;
-  height: 80px;
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
   padding: 20px;
+  
+  box-sizing: border-box;
 }
 
 .logoTech:hover{
-  width: 90px;
-  height: 90px;
+  min-width: 110px;
+  min-height: 110px;
+  max-height: 210px;
+  height: auto;
+  width: auto;
+  padding: 20px;
 }

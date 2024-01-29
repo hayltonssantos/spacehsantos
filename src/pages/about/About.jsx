@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styles from './About.module.css'
 import './Button.css'
+import photo1 from '../../assets/1.jpg'
+import photo2 from '../../assets/2.jpg'
 
 export default function About() {
 
@@ -43,7 +45,10 @@ export default function About() {
 
   return (
     <div className={styles.main} id='about'>
-      
+      <div className={styles.photos}>
+        <img src={photo1} className={styles.img1} alt=''></img>
+        <img src={photo2} className={styles.img2} alt=''></img>
+      </div>
       <div className={styles.textBox}>
         <h2>
           {

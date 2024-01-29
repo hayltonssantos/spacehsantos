@@ -22,3 +22,18 @@
   border: solid 2px rgb(253, 144, 2);
   border-radius: 25px 10px 10px 150px;
 }
+
+.homeText::after {
+  content: '|'; /* Adicionando um cursor piscante ao final do texto */
+  display: inline-block;
+  animation: blinkCursor 1s infinite; /* Animação do cursor piscante */
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
