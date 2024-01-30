@@ -3,6 +3,7 @@ import styles from './About.module.css'
 import './Button.css'
 import photo1 from '../../assets/1.jpg'
 import photo2 from '../../assets/2.jpg'
+import { animated, useSpring } from 'react-spring';
 
 export default function About() {
 
@@ -43,14 +44,43 @@ export default function About() {
   validando mis habilidades en estas áreas.
   `
 
+  const [springProps, set] = useSpring(() => ({
+    from:{
+      height:'0vh',
+      transform: 'translateX(100%)',
+      opacity: 0,
+    }
+  }));
+
+  const handleScroll = () => {
+    const shouldAnimate = window.scrollY > 300;
+    if (shouldAnimate) {
+      set.start({
+        to:{
+          height:'100vh',
+          display: 'flex',
+          transform: `translateX(0)`,
+          opacity: 1 }
+
+      });
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.main} id='about'>
+    <animated.div style={springProps} className={styles.main} id='about'>
       <div className={styles.photos}>
         <img src={photo1} className={styles.img1} alt=''></img>
         <img src={photo2} className={styles.img2} alt=''></img>
       </div>
       <div className={styles.textBox}>
-        <h2>
+        <h2  className={styles.aboutMe}>
           {
             (lg === 'pt-br' ? `Sobre Mim` : '')
           }
@@ -81,6 +111,6 @@ export default function About() {
         </div>
         
       </div>
-    </div>
+    </animated.div>
   )
 }

@@ -14,8 +14,8 @@
   border-bottom: solid 1px blanchedalmond;
 }
 
-.textBox, .buttons, .text, h2{
-  animation: slideFromRight 1.5s ease-out;
+.textBox, .buttons, .text, .aboutMe{
+  animation: slideFromRight 2.0s ease-out;
 }
 
 .textBox{
@@ -32,7 +32,7 @@
   width: 60%;
   padding: 5px 50px 30px 50px;
 
-  animation: slideFromRight 1.5s ease-out;
+  animation: slideFromRight 2.0s ease-out;
 }
 
 .photos{
@@ -53,14 +53,14 @@
   position: relative;
   left: 70px;
   bottom: -20px;
-  animation: slideIn 1.5s ease-out; 
+  animation: slideIn 2.0s ease-out; 
 }
 
 .img2{
   position: relative;
   top: -30px;
   right: 30px;
-  animation: slideIn 1s ease-out;
+  animation: slideIn 2s ease-out;
 }
 
 .img1 , .img2 {

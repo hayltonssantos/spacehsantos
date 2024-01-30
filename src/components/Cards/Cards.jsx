@@ -1,16 +1,28 @@
 import React from 'react'
 import styles from './Cards.module.css'
 
-export default function Cards() {
+export default function Cards({title = '404', desc = '404', tech, link, children}) {
   return (
     <div className={styles.card}>
-      <div className={styles.title}>
-        <h3>Titulo</h3>
+      <div className={styles.divTitle}>
+        <div className={styles.title}>
+          <h3>{title}</h3>
+        </div>
       </div>
       <div className={styles.text}>
         <p>
-          Lorem 
+          {desc} 
         </p>
+      </div>
+      <div className={styles.inf}>
+          <a href={link} target='_blank'>
+            <button className={styles.link}>
+              Link
+            </button>
+          </a>
+          <div className={styles.dvPhotos}>
+            {children}
+          </div>
       </div>
     </div>
   )
