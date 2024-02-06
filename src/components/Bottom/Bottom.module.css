@@ -2,6 +2,8 @@
   position: static;
   top:0;
 
+  display: flex;
+
   background-color: rgb(245,145,0);
 
   justify-content: center;

@@ -1,7 +1,7 @@
 import React from 'react'
 import About from '../about/About'
 import Main from '../../components/Main/Main'
-import Knowledge from '../knowledge/Knowledge'
+import Stacks from '../stacks/Stacks'
 import Bottom from '../../components/Bottom/Bottom'
 import Projects from '../projects/Projects'
 
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Main/>
       <About/>
-      <Knowledge/>
+      <Stacks/>
       <Projects/>
       <Bottom/>
     </>

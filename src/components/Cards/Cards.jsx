@@ -17,9 +17,12 @@ export default function Cards({title = '404', desc = '404', tech, link, children
       <div className={styles.inf}>
           <a href={link} target='_blank'>
             <button className={styles.link}>
-              Link
+              <span>  
+              Link Projeto
+              </span>
             </button>
           </a>
+          <p className={styles.line}></p>
           <div className={styles.dvPhotos}>
             {children}
           </div>

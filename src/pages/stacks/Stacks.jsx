@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Knowledge.module.css'
+import styles from './Stacks.module.css'
 import cssPhoto from '../../assets/techs/css.png'
 import html5Photo from '../../assets/techs/html5.png'
 import jsPhoto from '../../assets/techs/js.png'
@@ -8,7 +8,7 @@ import reactPhoto from '../../assets/techs/react.png'
 import { animated, useSpring } from 'react-spring';
 
 
-export default function Knowledge() {
+export default function Stacks() {
 
   const [springProps, set] = useSpring(() => ({
     from:{
@@ -41,12 +41,29 @@ export default function Knowledge() {
   return (
     <animated.div style={springProps} className={styles.main}>
       <div className={styles.divTechs}>
-        <h2>Knowledge</h2>
-        <img className={styles.logoTech} src={html5Photo}/>
-        <img className={styles.logoTech} src={cssPhoto}/>
-        <img className={styles.logoTech} src={jsPhoto}/>
-        <img className={styles.logoTech} src={reactPhoto}/>
-        <img className={styles.logoTech} src={pyPhoto}/>
+        <div className={styles.divTitle}>
+          <h2 className={styles.title}>My Tech Stack</h2>
+        </div>
+        <div className={styles.divImg}>
+          <img className={styles.logoTech} src={html5Photo} alt='HTML5'/>
+          <span>HTML</span>
+        </div>
+        <div className={styles.divImg}>
+          <img className={styles.logoTech} src={cssPhoto} alt='CSS3'/>
+          <span>CSS3</span>
+        </div>
+        <div className={styles.divImg}>
+          <img className={styles.logoTech} src={jsPhoto} alt='JavaScript'/>
+          <span>JavaScript</span>
+        </div>
+        <div className={styles.divImg}>
+          <img className={styles.logoTech} src={reactPhoto} alt='React'/>
+          <span>React</span>
+        </div>
+        <div className={styles.divImg}>
+          <img className={styles.logoTech} src={pyPhoto} alt='Python'/>
+          <span>Python</span>
+        </div>
       </div>
     </animated.div>
   )

@@ -6,7 +6,10 @@ import Logos from '../../components/Logos/Logos'
 export default function Projects() {
   return (
     <div className={styles.main}>
-      <h3 className={styles.title}>Projects</h3>
+      <div className={styles.divTitle}>
+        <h1 className={styles.title}>Projects</h1>
+        <span className={styles.text}>Technologies I’ve been working with recently</span>
+      </div>
       <Cards 
         title='My Wendding'
         desc='404'
@@ -25,7 +28,7 @@ export default function Projects() {
           é uma aplicação de código aberto para 
           geração e gerenciamento seguro de senhas, 
           proporcionando eficiência e praticidade.'
-        link={'https://mywendding.web.app/'}
+        link={'https://github.com/hayltonssantos/4Save'}
       >
         <Logos photo={'py'}/>
         <Logos photo={'mysql'}/>

@@ -7,16 +7,31 @@
   justify-items: center;
 
   border-top: solid 1px blanchedalmond;
-  border-bottom: solid 1px blanchedalmond;
 
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
 
   margin: 400px 0 0 0;
 }
-.title{
+
+.divTitle{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title, .text{
   flex-basis: 100%;
 
   text-align: center;
-  width: 100%;
+  
+}
+
+.title:hover{
+  color: rgb(106, 125, 203);
+}
+
+.text{
+  font-style: italic;
 }

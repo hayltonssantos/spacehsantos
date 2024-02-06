@@ -3,6 +3,11 @@ import styles from './Bottom.module.css'
 
 export default function Bottom() {
   return (
-    <div className={styles.bottom}>Bottom</div>
+    <div className={styles.bottom}>
+      <p>
+        Made by Haylton Santos - 2024
+        
+      </p>
+    </div>
   )
 }

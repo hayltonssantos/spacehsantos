@@ -1,7 +1,7 @@
 .main{
   width: 100%;
   /* background-color: rgb(253, 144, 2); */
-  padding: 5px;
+  padding: 10px;
   box-sizing: border-box;
   position: sticky;
   font-family: 'Concert One', sans-serif;
@@ -15,6 +15,7 @@
 
   justify-content: center;
   align-items: center;
+  
 }
 
 h3{
@@ -31,25 +32,31 @@ h3{
   list-style: none;
   text-decoration: none;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .itemList, .iconsList{
   margin-left: 5px;
   margin-right: 5px;
+  
+  box-sizing: border-box;
 }
 
 .itemList a, .iconsList a {
   text-decoration: none;
   color: white;
+  
 }
 
 .itemList a:hover{
   transition-delay: 1ms;
   font-size: 1.5em;
-  color: rgb(255, 145, 0);
-  text-shadow: 4px 4px 15px rgba(255,145,0,0.8);
+  color: rgb(106, 125, 203);
+  text-shadow: 4px 4px 15px rgb(106, 125, 203);
+  
 }
 
 .iconsList a:hover{
-  color: rgb(255, 145, 0);
+  color: rgb(106, 125, 203);
+  
 }

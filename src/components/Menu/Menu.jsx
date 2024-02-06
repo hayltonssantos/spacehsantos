@@ -19,7 +19,7 @@ export default function Menu() {
               <a href='#about'> About </a>
             </li>
             <li className={styles.itemList}>
-              <a href='#knowledge'> Knowledge </a>
+              <a href='#stacks'> Stacks </a>
             </li>
             <li className={styles.itemList}>
               <a href='#projects'> Projects </a>
