@@ -21,6 +21,8 @@
   height: 280px;
   border: solid 2px rgb(106, 125, 203);
   border-radius: 25px 10px 10px 150px;
+  
+  transition: 0.5s;
 }
 
 .homeText::after {

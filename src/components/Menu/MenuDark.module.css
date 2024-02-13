@@ -1,0 +1,65 @@
+.main{
+  width: 100%;
+  /* background-color: rgb(253, 144, 2); */
+  padding: 10px;
+  box-sizing: border-box;
+  position: sticky;
+  font-family: 'Concert One', sans-serif;
+  font-size: 1.5em;
+  position: absolute; 
+  transition: 0.5s;
+}
+
+.header{
+  display: flex;
+  margin: 5px;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h3{
+  flex: 1;
+}
+
+.divList{
+  display: flex;
+}
+
+.list{
+  flex: 1;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.itemList, .iconsList{
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  box-sizing: border-box;
+}
+
+.itemList a, .iconsList a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.itemList a:hover{
+  transition-delay: 1ms;
+  font-size: 1.5em;
+  color: rgb(106, 125, 203);
+  text-shadow: 4px 4px 15px rgb(106, 125, 203);
+  transition: 0.5s;  
+}
+
+.iconsList a:hover{
+  color: rgb(106, 125, 203);
+  transition: 0.5s;
+
+  
+}

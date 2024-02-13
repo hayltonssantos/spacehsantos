@@ -13,12 +13,15 @@
   width: 100%;
 
   margin: 400px 0 0 0;
+  transition: 0.5s;
+
 }
 
 .divTitle{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .title, .text{
@@ -30,8 +33,12 @@
 
 .title:hover{
   color: rgb(106, 125, 203);
+  transition: 0.5s;
+
 }
 
 .text{
+  margin-top: -15px;
   font-style: italic;
+  font-size: 1.5em;
 }

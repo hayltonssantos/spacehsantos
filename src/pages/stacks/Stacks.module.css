@@ -12,6 +12,9 @@
 
   text-align: center;
   
+  box-sizing: border-box;
+  transition: 0.5s;
+
 }
 
 .divTechs{
@@ -21,7 +24,6 @@
   justify-content: center;
   padding: 10px;
   height: auto;
-  box-sizing: border-box;
 }
 
 .divTitle{
@@ -30,6 +32,8 @@
 
 .title:hover{
   color: rgb(106, 125, 203);
+  transition: 0.5s;
+
 }
 
 .divImg{
@@ -55,6 +59,8 @@
   padding: 20px;
   
   box-sizing: border-box;
+  transition: 0.5s;
+
 }
 
 .logoTech:hover{
@@ -64,6 +70,8 @@
   height: auto;
   width: auto;
   padding: 20px;
+  transition: 0.5s;
+
   
 }
 

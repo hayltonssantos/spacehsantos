@@ -1,12 +1,13 @@
 .main{
   width: 100%;
-  /* background-color: rgb(253, 144, 2); */
+  background-color: rgb(0, 132, 208);
   padding: 10px;
   box-sizing: border-box;
   position: sticky;
   font-family: 'Concert One', sans-serif;
   font-size: 1.5em;
-  position: absolute;
+  position: absolute; 
+  transition: 0.5s;
 }
 
 .header{
@@ -51,12 +52,14 @@ h3{
 .itemList a:hover{
   transition-delay: 1ms;
   font-size: 1.5em;
-  color: rgb(106, 125, 203);
-  text-shadow: 4px 4px 15px rgb(106, 125, 203);
-  
+  color: rgb(30, 172, 255);
+  text-shadow: 4px 4px 15px rgb(0, 64, 100);
+  transition: 0.5s;  
 }
 
 .iconsList a:hover{
-  color: rgb(106, 125, 203);
+  color: rgb(0, 64, 100);
+  transition: 0.5s;
+
   
 }
