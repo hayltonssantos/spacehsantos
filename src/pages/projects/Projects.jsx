@@ -12,8 +12,8 @@ export default function Projects() {
       </div>
       <Cards 
         title='My Wendding'
-        desc='404'
-        link={'https://mywendding.web.app/'}
+        desc='Decidi usar meus conhecimentos em React, JavaScript, HTML e CSS para criar um site de convite de casamento. Os convidados podem confirmar presença, acessar um catálogo de presentes e há uma página de administração para gerenciar a lista de convidados.'
+        link={'https://hcwedding.web.app/'}
       >
         <Logos photo={'html5'}/>
         <Logos photo={'css'}/>
