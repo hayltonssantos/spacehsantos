@@ -1,31 +1,28 @@
-.main{
+.main {
   height: auto;
   min-height: 100vh;
   width: 100%;
   margin: auto;
-
-  padding: 20px 0px;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
   border-top: solid 1px blanchedalmond;
   border-bottom: solid 1px blanchedalmond;
   transition: 0.5s;
-
 }
 
-.aboutMe:hover{
- color: rgb(106, 125, 203);
- transition: 0.5s;
+.aboutMe:hover {
+  color: rgb(106, 125, 203);
+  transition: 0.5s;
 }
 
-.textBox, .buttons, .text, .aboutMe{
+.textBox, .buttons, .text, .aboutMe {
   animation: slideFromRight 2.0s ease-out;
 }
 
-.textBox{
+.textBox {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 50%;
@@ -33,29 +30,24 @@
   align-items: center;
   text-align: center;
   margin: auto;
-
   height: auto;
   min-height: 50%;
   width: 60%;
   padding: 5px 50px 30px 50px;
-
   animation: slideFromRight 2.0s ease-out;
 }
 
-.photos{
+.photos {
   display: flex;
   flex-wrap: nowrap;
-  
   width: auto;
   height: max-content;
   margin: auto;
-
   padding: 10px;
-
   box-sizing: border-box;
 }
 
-.img1{
+.img1 {
   z-index: 1;
   position: relative;
   left: 70px;
@@ -63,21 +55,20 @@
   animation: slideIn 2.0s ease-out; 
 }
 
-.img2{
+.img2 {
   position: relative;
   top: -30px;
   right: 30px;
   animation: slideIn 2s ease-out;
 }
 
-.img1 , .img2 {
+.img1, .img2 {
   width: auto;
   min-width: 150px;
   max-width: 150px;
   border-radius: 50%;
   padding: 10px;
 }
-
 
 @keyframes slideIn {
   0% {
@@ -98,5 +89,59 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+/* Telas pequenas (tablets) */
+@media (max-width: 768px) {
+  .textBox {
+    flex-basis: 100%;
+    width: 80%;
+    padding: 10px 20px;
+  }
+
+  .photos {
+    flex-direction: column;
+  }
+
+  .img1 {
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .img2 {
+    top: 0;
+    right: 0;
+  }
+
+  .img1, .img2 {
+    min-width: 120px;
+    max-width: 120px;
+  }
+}
+
+/* Telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .textBox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .img1, .img2 {
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  .img1 {
+    left: 0;
+    bottom: 0;
+  }
+
+  .img2 {
+    top: 0;
+    right: 0;
   }
 }

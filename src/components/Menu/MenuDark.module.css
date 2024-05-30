@@ -1,6 +1,5 @@
-.main{
+.main {
   width: 100%;
-  /* background-color: rgb(253, 144, 2); */
   padding: 10px;
   box-sizing: border-box;
   position: sticky;
@@ -10,24 +9,23 @@
   transition: 0.5s;
 }
 
-.header{
+.header {
   display: flex;
   margin: 5px;
-
   justify-content: center;
   align-items: center;
-  
 }
 
-h3{
+h3 {
   flex: 1;
 }
 
-.divList{
+.divList {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.list{
+.list {
   flex: 1;
   display: flex;
   list-style: none;
@@ -36,20 +34,18 @@ h3{
   box-sizing: border-box;
 }
 
-.itemList, .iconsList{
+.itemList, .iconsList {
   margin-left: 5px;
   margin-right: 5px;
-  
   box-sizing: border-box;
 }
 
 .itemList a, .iconsList a {
   text-decoration: none;
   color: white;
-  
 }
 
-.itemList a:hover{
+.itemList a:hover {
   transition-delay: 1ms;
   font-size: 1.5em;
   color: rgb(106, 125, 203);
@@ -57,9 +53,47 @@ h3{
   transition: 0.5s;  
 }
 
-.iconsList a:hover{
+.iconsList a:hover {
   color: rgb(106, 125, 203);
   transition: 0.5s;
+}
 
-  
+.divListIcons{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+}
+
+.divListIcons ul, .divList ul {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Media Queries */
+
+/* Estilos para telas pequenas, como tablets */
+@media screen and (max-width: 768px) {
+  .main {
+  text-align: center;
+    font-size: 1.2em; /* Reduza o tamanho da fonte para telas menores */
+  }
+  .divList{
+    width: 100%;
+  }
+}
+
+/* Estilos para telas muito pequenas, como smartphones */
+@media screen and (max-width: 480px) {
+  .main {
+  text-align: center;
+    font-size: 1em; /* Reduza ainda mais o tamanho da fonte para telas muito pequenas */
+  }
+  .divList{
+    width: 100%;
+  }
 }

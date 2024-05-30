@@ -1,27 +1,23 @@
-
-.main{
+.main {
   font-family: 'Concert One', sans-serif;
-
   display: flex;
-  
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
   height: 100vh;
-
   align-items: center;
   justify-content: center;
 }
 
-.homeText{
+.homeText {
   font-size: 2.5em;
-
 }
 
-.profilePhoto{
+.profilePhoto {
   width: 280px;
   height: 280px;
   border: solid 2px rgb(106, 125, 203);
   border-radius: 25px 10px 10px 150px;
-  
   transition: 0.5s;
 }
 
@@ -37,5 +33,39 @@
   }
   50% {
     opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+/* Estilos para telas pequenas, como tablets */
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  
+  .homeText {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .profilePhoto {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para telas muito pequenas, como smartphones */
+@media screen and (max-width: 480px) {
+  .homeText {
+    font-size: 1.5em;
+  }
+
+  .profilePhoto {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
   }
 }

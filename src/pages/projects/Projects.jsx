@@ -22,16 +22,16 @@ export default function Projects() {
       </Cards>
 
       <Cards 
-        title='4Save'
-        desc='O 4Save, desenvolvido em 
-          Python com SQLite3 por Haylton Santos, 
-          é uma aplicação de código aberto para 
-          geração e gerenciamento seguro de senhas, 
-          proporcionando eficiência e praticidade.'
-        link={'https://github.com/hayltonssantos/4Save'}
+        title='Burguer da Vila'
+        desc='Projeto realizado como freelance para uma hamburgueria. 
+        Neste projeto inclui o Menu, Sua Localização e Top Hambugueres
+        Realizado com React'
+        link={'https://burguerdavila.web.app/'}
       >
-        <Logos photo={'py'}/>
-        <Logos photo={'mysql'}/>
+        <Logos photo={'html5'}/>
+        <Logos photo={'css'}/>
+        <Logos photo={'js'}/>
+        <Logos photo={'react'}/>
         
       </Cards>
       <Cards 

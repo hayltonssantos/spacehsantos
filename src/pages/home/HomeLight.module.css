@@ -1,7 +1,23 @@
-.main{
+.main {
   color-scheme: light;
   color: rgb(0, 0, 0);
-  background-color: rgb(249, 252, 255) ;
-
+  background-color: rgb(249, 252, 255);
   transition: 0.5s;
+  padding: 20px; /* Adicione um preenchimento para garantir que o conteúdo não fique muito próximo das bordas */
+  overflow: hidden;
+}
+
+/* Adicione regras de estilo específicas para telas menores usando media queries */
+@media screen and (max-width: 768px) {
+  .main {
+    /* Estilos para telas menores, como tablets */
+    padding: 10px; /* Reduza o preenchimento para telas menores */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    /* Estilos para telas muito pequenas, como smartphones */
+    padding: 5px; /* Reduza ainda mais o preenchimento para telas muito pequenas */
+  }
 }

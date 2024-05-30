@@ -1,23 +1,18 @@
-.main{
+.main {
   min-height: 100vh;
   height: auto;
   width: 100%;
- 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
   margin: auto;
-
   text-align: center;
-  
   box-sizing: border-box;
   transition: 0.5s;
-
 }
 
-.divTechs{
+.divTechs {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -26,17 +21,16 @@
   height: auto;
 }
 
-.divTitle{
+.divTitle {
   width: 100%;
 }
 
-.title:hover{
+.title:hover {
   color: rgb(106, 125, 203);
   transition: 0.5s;
-
 }
 
-.divImg{
+.divImg {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -44,26 +38,23 @@
   box-sizing: content-box;
 }
 
-.divImg span{
+.divImg span {
   font-size: 0.9em;
   font-weight: bold;
-  
 }
 
-.logoTech{
+.logoTech {
   min-width: 90px;
   min-height: 90px;
   max-height: 100px;
   height: auto;
   width: auto;
   padding: 20px;
-  
   box-sizing: border-box;
   transition: 0.5s;
-
 }
 
-.logoTech:hover{
+.logoTech:hover {
   min-width: 100px;
   min-height: 100px;
   max-height: 110px;
@@ -71,7 +62,54 @@
   width: auto;
   padding: 20px;
   transition: 0.5s;
-
-  
 }
 
+/* Media Queries */
+
+/* Telas pequenas */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  
+  .divTechs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divImg {
+    width: 80%;
+    padding: 5px;
+  }
+  
+  .logoTech {
+    min-width: 70px;
+    min-height: 70px;
+    max-height: auto;
+  }
+  
+  .logoTech:hover {
+    min-width: 80px;
+    min-height: 80px;
+    max-height: auto;
+  }
+}
+
+/* Telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .divImg span {
+    font-size: 0.8em;
+  }
+  
+  .logoTech {
+    min-width: 60px;
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  .logoTech:hover {
+    min-width: 70px;
+    min-height: auto;
+    max-height: auto;
+  }
+}

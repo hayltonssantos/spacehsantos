@@ -49,29 +49,31 @@ export default function Menu() {
               <a href='#contact'> Contact </a>
             </li>
           </ul>
-          <ul className={style.list}>
-            <li className={style.iconsList}>
-              <a href='https://github.com/hayltonssantos' target="_blank">
-                <FaGithub size={40} />
-              </a>
-            </li>
-            <li className={style.iconsList}>
-              <a href='https://www.linkedin.com/in/hayltonssantos/' target="_blank">
-                <FaLinkedin size={40} />
-              </a>
-            </li>
-          </ul>
+
+          <div className={style.divListIcons}>              
+              <ul className={style.list}>
+                <li className={style.iconsList}>
+                  <a href='https://github.com/hayltonssantos' target="_blank">
+                    <FaGithub size={40} />
+                  </a>
+                </li>
+                <li className={style.iconsList}>
+                  <a href='https://www.linkedin.com/in/hayltonssantos/' target="_blank">
+                    <FaLinkedin size={40} />
+                  </a>
+                </li>
+              <label onChange={() => {
+                setTheme(!theme)
+              }} class="ui-switch">
+                <input type="checkbox"/>
+                <div class="slider">
+                    <div class="circle"></div>
+              </div>
+              </label>
+              </ul>
+            </div>
+          
         </div>
-       
-        <label onChange={() => {
-          setTheme(!theme)
-        }} class="ui-switch">
-          <input type="checkbox"/>
-          <div class="slider">
-              <div class="circle"></div>
-          </div>
-        </label>
-        
       </header>
     </div>
   )

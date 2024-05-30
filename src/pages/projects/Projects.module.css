@@ -1,44 +1,65 @@
-.main{
+.main {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-around;
   align-items: center;
   justify-items: center;
-
   border-top: solid 1px blanchedalmond;
-
   min-height: 100vh;
   height: auto;
   width: 100%;
-
   margin: 400px 0 0 0;
   transition: 0.5s;
-
 }
 
-.divTitle{
+.divTitle {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
-.title, .text{
+.title, .text {
   flex-basis: 100%;
-
   text-align: center;
-  
 }
 
-.title:hover{
+.title:hover {
   color: rgb(106, 125, 203);
   transition: 0.5s;
-
 }
 
-.text{
+.text {
   margin-top: -15px;
   font-style: italic;
   font-size: 1.5em;
+}
+
+/* Media Queries */
+
+/* Telas pequenas (tablets) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    margin: 200px 0 0 0; /* Ajuste a margem conforme necessário */
+  }
+
+  .divTitle {
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 1.2em;
+  }
+}
+
+/* Telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .main {
+    margin: 100px 0 0 0; /* Ajuste a margem conforme necessário */
+  }
+
+  .text {
+    font-size: 1em;
+  }
 }
