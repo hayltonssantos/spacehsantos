@@ -11,7 +11,7 @@ export default function Projects() {
         <span className={styles.text}>Technologies I’ve been working with recently</span>
       </div>
       <Cards 
-        title='My Wendding'
+        title='My Wedding'
         desc='Decidi usar meus conhecimentos em React, JavaScript, HTML e CSS para criar um site de convite de casamento. Os convidados podem confirmar presença, acessar um catálogo de presentes e há uma página de administração para gerenciar a lista de convidados.'
         link={'https://hcwedding.web.app/'}
       >
@@ -35,16 +35,14 @@ export default function Projects() {
         
       </Cards>
       <Cards 
-        title='Validador de CNPJ'
-        desc='O ValidadorCNPJ, 
-          integra Back-End, Front-End e uma API em Python. 
-          Recebe uma lista de CNPJs, consulta uma API, 
-          e gera um arquivo CSV. Em caso de erros, 
-          destaca os CNPJs em uma planilha, exibindo a 
-          contagem no display.'
-        link={'https://github.com/hayltonssantos/ValidadorCNPJ'}
+        title='Stock Elis'
+        desc='Utilizando React e Firebase Firestore, ele carrega dados de um arquivo JSON e verifica a existência de cada artigo antes de adicioná-lo ao banco de dados para evitar duplicações. Ideal para empresas que precisam manter um catálogo de produtos atualizado e acessível.'
+        link={'https://stockelistv.web.app/home'}
       >
-        <Logos photo={'py'}/>
+        <Logos photo={'html5'}/>
+        <Logos photo={'css'}/>
+        <Logos photo={'js'}/>
+        <Logos photo={'react'}/>
       </Cards>
       
     </div>
